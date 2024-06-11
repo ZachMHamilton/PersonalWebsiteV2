@@ -14,7 +14,7 @@ const Portfolio = () => {
               className="gif w-full lg:w-2/5 hidden lg:block"
               src="../src/assets/connecting.gif"
             />
-            <div className="w-full lg:w-2/5">
+            <div className="flex flex-col gap-2 w-full lg:w-2/5">
               <h2 className="text-accent text-xl sm:text-2xl md:text-3xl lg:text-4xl">
                 Lambda Peeler
               </h2>
@@ -37,7 +37,7 @@ const Portfolio = () => {
             </div>
           </div>
           <div className="flex flex-col lg:flex-row items-center justify-between w-full gap-4 lg:gap-16">
-            <div className="w-full lg:w-2/5">
+            <div className="flex flex-col gap-2 w-full lg:w-2/5">
               <h2 className="text-accent text-xl sm:text-2xl md:text-3xl lg:text-4xl">
                 Shelved
               </h2>
@@ -67,7 +67,7 @@ const Portfolio = () => {
               className="gif w-full lg:w-2/5 hidden lg:block"
               src="../src/assets/algo.png"
             />
-            <div className="w-full lg:w-2/5">
+            <div className="flex flex-col gap-2 w-full lg:w-2/5">
               <h2 className="text-accent text-xl sm:text-2xl md:text-3xl lg:text-4xl">
                 Algo Archive
               </h2>
