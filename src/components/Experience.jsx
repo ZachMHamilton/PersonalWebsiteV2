@@ -94,7 +94,7 @@ const Experience = () => {
                   {selectedExperience.company}
                 </h3>
               </div>
-              <ul className="text-white text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl list-disc pl-6 mt-4">
+              <ul className="text-white text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl list-disc pl-6 mt-4">
                 {selectedExperience.details.map((detail, index) => (
                   <li key={index}>{detail}</li>
                 ))}
