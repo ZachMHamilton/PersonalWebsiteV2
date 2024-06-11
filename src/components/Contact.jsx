@@ -54,7 +54,7 @@ const Contact = () => {
         <div className="flex flex-col items-center w-2/5 gap-6">
           <div className="text-white">{message}</div>
           <form
-            className="flex flex-col items-start justify-cente mx-auto w-4/5"
+            className="flex flex-col gap-1 items-start justify-cente mx-auto w-4/5"
             onSubmit={handleSubmit}
           >
             <div className="relative z-0 w-full mb-5 group">
@@ -105,24 +105,16 @@ const Contact = () => {
                 Subject
               </label>
             </div>
-
-            <form className="relative z-0 w-full mb-5 group">
-              <label
-                htmlFor="message"
-                className="block mb-2 text-xs sm:text-xs md:text-sm lg:text-base xl:text-lg font-medium text-gray-900 dark:text-white"
-              >
-                Your message
-              </label>
-              <textarea
-                id="message"
-                rows="4"
-                className="block p-2.5 w-full text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl text-accent bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                placeholder="Leave a comment..."
-              ></textarea>
-            </form>
+            <input
+              id="message"
+              name="message"
+              rows="4"
+              className="block p-2.5 h-auto w-full text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl text-accent bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              placeholder="Leave a message..."
+            ></input>
             <button
               type="submit"
-              className="text-white bg-accent hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              className="text-white mt-4 bg-accent hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
             >
               Submit
             </button>
