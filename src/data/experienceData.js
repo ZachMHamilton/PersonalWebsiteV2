@@ -4,8 +4,8 @@ const experienceData = [
     company: 'Ohio Department of Taxation',
     period: "July '24 - Present",
     details: [
-      'Tax stuff tax stuff tax stuff tax stuff tax stuff tax stuff',
-      'Tax stuff tax stuff tax stuff tax stuff tax stuff tax stuff',
+      'The Ohio Department of Taxation of Taxation maintains an integrated Tax Administration System known as STARs',
+      "Integrate with the STARS Development, Support, Infrastructure, and Production System teams in order to meet the agency's needs to support the business community directly and taxpayers indirectly.",
     ],
   },
   {
@@ -13,9 +13,9 @@ const experienceData = [
     company: 'Linkt',
     period: "Jan. '24 - June '24",
     details: [
-      'Wrote some awesome code and did awesome things so awesomly',
-      'Wrote some awesome code and did awesome things so awesomly',
-      'Wrote some awesome code and did awesome things so awesomly',
+      'Led the overhaul of one of Linkt’s clients’ legacy codebase into a modern Next.js application, enhancing scalability and performance',
+      'Identified and eliminated redundant code segments, optimizing application performance and enhancing user experience',
+      'Implemented extensive test suites using Jest for unit, integration, and end-to-end testing, achieving 90% code coverage',
     ],
   },
   {
@@ -23,9 +23,9 @@ const experienceData = [
     company: 'Lambda Peeler (Open Source)',
     period: "July '23 - Jan. '24",
     details: [
-      'LAMBDA LAMBDA LAMBDA LAMBDA LAMBDA LAMBDA LAMBDA',
-      'LAMBDA  LAMBDA LAMBDA LAMBDA LAMBDA LAMBDA',
-      'LAMBDA LAMBDA LAMBDA LAMBDA LAMBDA LAMBDA LAMBDA',
+      'Collaborated with a team of talented software engineers to develop an open-source AWS Lambda management tool, with a focus on enhancing Lambda Layers management and developer efficiency',
+      'Integrated AWS SDK v3 for its ability to facilitate seamless interaction with AWS, contributing to faster development and testing cycles',
+      'Architected the Express backend to facilitate the chaining of modularized middleware to streamline backend data flow, using JWTs to securely handle authenticated sessions and Bcrypt to verify password information',
     ],
   },
   {
@@ -33,9 +33,8 @@ const experienceData = [
     company: 'The Ohio State University',
     period: "Aug. '22 - Dec. '22",
     details: [
-      'Go bucks! Go bucks! Go bucks! Go bucks! Go bucks! Go bucks!',
-      'Go bucks! Go bucks! Go bucks! Go bucks! Go bucks! Go bucks!',
-      'Go bucks! Go bucks! Go bucks! Go bucks! Go bucks! Go bucks!',
+      'Demonstrated proficiency in Java fundamentals during lab sessions, aiding engineering students in fostering a deeper understanding of coding concepts, such as Object-Oriented programming and basic data structures and algorithms',
+      'Led frequent code reviews, delivering targeted feedback to 50+ engineering students, enhancing coding skills and assignment performance by providing valuable insights and best practices',
     ],
   },
 ];
