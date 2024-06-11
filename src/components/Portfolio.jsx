@@ -2,27 +2,11 @@ import EastIcon from '@mui/icons-material/East';
 
 const Portfolio = () => {
   return (
-    <div className="flex flex-col text-text bg-background min-h-screen p-4">
-      <div className="flex flex-col gap-24 p-16">
-        <div className="flex flex-col items-start gap-12 hidden xl:block">
-          <div className="flex items-end">
-            <span className="text-accent text-lg sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">
-              Languages&nbsp;
-            </span>
-            <p className="text-white text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl">
-              &nbsp; JavaScript | TypeScript | Java | SQL
-            </p>
-          </div>
-          <div className="flex items-end">
-            <span className="text-accent text-lg sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">
-              Technologies&nbsp;
-            </span>
-            <p className="text-white text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl">
-              &nbsp; React | Node | Express | AWS SDK | PostgreSQL | MongoDB |
-              Redux | Git | Jest | HTML | CSS | JWT | Heroku
-            </p>
-          </div>
-        </div>
+    <div className="flex flex-col items-center text-text bg-background min-h-screen p-4 md:p-8 lg:p-24 gap-12 xl:gap-16">
+      <div className="text-text text-3xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
+        Portfolio
+      </div>
+      <div className="flex flex-col gap-24">
         {/* Features section starts here */}
         <div className="flex flex-col items-center justify-center gap-24 w-full">
           <div className="flex flex-col lg:flex-row items-center justify-between w-full gap-4 lg:gap-16">

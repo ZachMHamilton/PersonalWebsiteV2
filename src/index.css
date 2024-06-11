@@ -2,39 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-#features {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 10em;
-  padding-top: 8em;
-  padding-bottom: 3em;
-}
-
-#feature {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-}
-
-#featureDiscription {
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 30em;
-  height: 20em;
-  border-radius: 10px;
-  padding-left: 2em;
-  padding-right: 2em;
-}
-
-#gif {
-  height: 20em;
-  border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 10px;
+* {
+  background-color: #010204;
 }
