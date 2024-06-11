@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 const workExperiences = [
   {
-    title: 'Software Engineer',
+    title: 'Software Development Specialist',
     company: 'Ohio Department of Taxation',
     period: "July '24 - Present",
     details: [
