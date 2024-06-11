@@ -21,7 +21,7 @@ const Contact = () => {
       initial="hidden"
       variants={fadeIn('up', 'spring', 0, 2)}
     >
-      <div className="flex items-start gap-48 w-full h-full p-8 md:p-12 lg:p-24">
+      <div className="flex hidden md:block items-start gap-48 w-full h-full p-8 md:p-12 lg:p-24">
         <div className="flex flex-col items-start w-2/5 gap-6">
           <h1 className="text-white text-5xl lg:text-6xl">
             Let&apos;s work together!
