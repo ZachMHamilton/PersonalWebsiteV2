@@ -21,14 +21,14 @@ const Contact = () => {
       initial="hidden"
       variants={fadeIn('up', 'spring', 0, 2)}
     >
-      <div className="flex hidden md:block items-start gap-48 w-full h-full p-8 md:p-12 lg:p-24">
+      <div className="md:flex hidden items-start gap-48 w-full h-full p-8 md:p-12 lg:p-24">
         <div className="flex flex-col items-start w-2/5 gap-6">
           <h1 className="text-white text-5xl lg:text-6xl">
             Let&apos;s work together!
           </h1>
           <p className="flex items-center text-white mt-4">
             <EmailIcon className="mr-2" />
-            Email me at:&nbsp;
+            Email:&nbsp;
             <a href="mailto:zachmhamilton@outlook.com" className="text-accent">
               zachmhamilton@outlook.com
             </a>
