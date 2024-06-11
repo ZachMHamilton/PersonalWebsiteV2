@@ -2,7 +2,7 @@ import EastIcon from '@mui/icons-material/East';
 
 const Portfolio = () => {
   return (
-    <div className="flex flex-col items-center text-text bg-background min-h-screen p-4 md:p-8 lg:p-24 gap-12 xl:gap-16">
+    <div className="flex flex-col items-center text-text bg-background gap-12 xl:gap-16 p-8 md:p-12 lg:p-24">
       <div className="text-text text-3xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
         Portfolio
       </div>

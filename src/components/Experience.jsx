@@ -39,11 +39,11 @@ const Experience = () => {
   );
 
   return (
-    <div className="flex flex-col items-center gap-12 xl:gap-16 p-4 md:p-8 lg:p-24">
+    <div className="flex flex-col items-center gap-12 xl:gap-16 p-8 md:p-12 lg:p-24">
       <div className="text-text text-3xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
         Experience
       </div>
-      <div className="flex flex-col items-start gap-12 hidden xl:block">
+      <div className="flex flex-col items-start justify-start gap-12 hidden xtra:block p-4 w-full">
         <div className="flex items-end">
           <span className="text-accent text-lg sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">
             Languages&nbsp;
@@ -67,17 +67,35 @@ const Experience = () => {
           {workExperiences.map((experience, index) => (
             <div
               key={index}
-              className="cursor-pointer mb-4 p-4 bg-gray-800 rounded-md hover:bg-gray-700"
+              className={'cursor-pointer rounded-md'}
               onClick={() => setSelectedExperience(experience)}
             >
-              <h3 className="text-accent text-lg sm:text-xl md:text-2xl">
+              <h3
+                className={`text-lg sm:text-xl md:text-2xl ${
+                  selectedExperience === experience
+                    ? 'text-accent'
+                    : 'text-gray-700'
+                }`}
+              >
                 {experience.title}
               </h3>
               <div>
-                <p className="text-white text-sm sm:text-base md:text-lg">
+                <p
+                  className={`text-sm sm:text-base md:text-lg ${
+                    selectedExperience === experience
+                      ? 'text-white'
+                      : 'text-gray-700'
+                  }`}
+                >
                   {experience.company}
                 </p>
-                <p className="text-white text-sm hidden sm:block sm:text-base md:text-lg">
+                <p
+                  className={`text-sm hidden sm:block sm:text-base md:text-lg ${
+                    selectedExperience === experience
+                      ? 'text-white'
+                      : 'text-gray-700'
+                  }`}
+                >
                   {experience.period}
                 </p>
               </div>
