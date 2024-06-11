@@ -48,7 +48,10 @@ const Experience = () => {
   );
 
   return (
-    <div className="flex flex-col items-center gap-8 xtra:gap-16 p-8 md:p-12 lg:p-24">
+    <div
+      id="experience"
+      className="flex flex-col items-center gap-8 xtra:gap-16 p-8 md:p-12 lg:p-24"
+    >
       <div className="text-text text-3xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
         Experience
       </div>

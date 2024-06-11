@@ -1,56 +1,72 @@
-import { Link, useLocation } from 'react-router-dom';
+import { useState } from 'react';
+import { Link as ScrollLink } from 'react-scroll';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 
 const Nav = () => {
-  const location = useLocation();
-  const currentPage = location.pathname;
+  const [current, setCurrent] = useState('home');
 
   return (
     <nav className="fixed top-0 w-full bg-transparent z-10">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="w-full px-8 md:px-12 lg:px-24">
         <div className="flex justify-between h-16">
           <div className="flex gap-8">
-            <Link
-              to="/"
+            <ScrollLink
+              to="home"
+              spy={true}
+              smooth={true}
+              duration={500}
               className={`flex items-center text-xl font-bold ${
-                currentPage === '/'
+                current === 'home'
                   ? 'text-accent'
                   : 'text-text hover:text-accent'
               }`}
+              onClick={() => setCurrent('home')}
             >
               Home
-            </Link>
-            {/* <Link
-              to="/about"
+            </ScrollLink>
+            <ScrollLink
+              to="experience"
+              spy={true}
+              smooth={true}
+              duration={500}
               className={`flex items-center text-xl font-bold ${
-                currentPage === '/about'
+                current === 'experience'
                   ? 'text-accent'
                   : 'text-text hover:text-accent'
               }`}
+              onClick={() => setCurrent('experience')}
             >
-              About
-            </Link> */}
-            <Link
-              to="/portfolio"
+              Experience
+            </ScrollLink>
+            <ScrollLink
+              to="portfolio"
+              spy={true}
+              smooth={true}
+              duration={500}
               className={`flex items-center text-xl font-bold ${
-                currentPage === '/portfolio'
+                current === 'portfolio'
                   ? 'text-accent'
                   : 'text-text hover:text-accent'
               }`}
+              onClick={() => setCurrent('portfolio')}
             >
-              My Work
-            </Link>
-            <Link
-              to="/contact"
+              Portfolio
+            </ScrollLink>
+            <ScrollLink
+              to="contact"
+              spy={true}
+              smooth={true}
+              duration={500}
               className={`flex items-center text-xl font-bold ${
-                currentPage === '/contact'
+                current === 'contact'
                   ? 'text-accent'
                   : 'text-text hover:text-accent'
               }`}
+              onClick={() => setCurrent('contact')}
             >
               Contact
-            </Link>
+            </ScrollLink>
           </div>
           <div className="flex gap-4 items-center">
             <div className="text-xl font-bold text-accent">Zach Hamilton</div>
