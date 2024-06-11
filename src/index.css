@@ -32,3 +32,9 @@
   padding-left: 2em;
   padding-right: 2em;
 }
+
+#gif {
+  height: 20em;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 10px;
+}
