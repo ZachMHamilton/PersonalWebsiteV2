@@ -10,7 +10,7 @@ const Nav = () => {
     <nav className="fixed top-0 w-full bg-transparent z-10">
       <div className="w-full px-8 md:px-12 lg:px-24">
         <div className="flex justify-between h-16">
-          <div className="flex gap-8">
+          <div className="hidden md:flex gap-8">
             <ScrollLink
               to="home"
               spy={true}
@@ -68,7 +68,7 @@ const Nav = () => {
               Contact
             </ScrollLink>
           </div>
-          <div className="flex gap-4 items-center">
+          <div className="flex flex-row justify-center md:justify-end gap-4 items-center w-full">
             <div className="text-xl font-bold text-accent">Zach Hamilton</div>
             <a href="https://www.linkedin.com/in/zach-m-hamilton/">
               <LinkedInIcon className="text-white" />
