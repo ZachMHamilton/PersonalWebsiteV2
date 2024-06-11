@@ -25,7 +25,11 @@ const Portfolio = () => {
       <div className="flex flex-col gap-24">
         <div className="flex flex-col items-center justify-center gap-24 w-full">
           {portfolioData.map((item, index) => (
-            <PortfolioItem key={index} item={item} delay={index * 0.2} />
+            <PortfolioItem
+              key={index}
+              item={item}
+              isImageLeft={index % 2 !== 0}
+            />
           ))}
         </div>
       </div>

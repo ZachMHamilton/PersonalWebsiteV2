@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { fadeIn } from '../utils/motion';
 import { useFadeInOnInView } from '../utils/useFadeInOnView';
 
-const PortfolioItem = ({ item, delay, isImageLeft }) => {
+const PortfolioItem = ({ item, isImageLeft }) => {
   const { ref, controls } = useFadeInOnInView(0.1);
 
   return (
@@ -11,7 +11,7 @@ const PortfolioItem = ({ item, delay, isImageLeft }) => {
       ref={ref}
       animate={controls}
       initial="hidden"
-      variants={fadeIn('up', 'spring', delay, 2)}
+      variants={fadeIn('up', 'spring', 0, 2)}
       className={`flex flex-col lg:flex-row items-center justify-between w-full gap-4 lg:gap-16 ${
         isImageLeft ? 'lg:flex-row-reverse' : ''
       }`}
