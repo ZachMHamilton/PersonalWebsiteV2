@@ -32,16 +32,17 @@ const portfolioItems = [
 ];
 
 const Portfolio = () => {
-  const controls = useAnimation();
-  const { ref, inView } = useInView({
+  const headerControls = useAnimation();
+  const { ref: headerRef, inView: headerInView } = useInView({
     threshold: 0.1,
+    triggerOnce: true,
   });
 
   useEffect(() => {
-    if (inView) {
-      controls.start('show');
+    if (headerInView) {
+      headerControls.start('show');
     }
-  }, [controls, inView]);
+  }, [headerControls, headerInView]);
 
   return (
     <div
@@ -49,8 +50,8 @@ const Portfolio = () => {
       className="flex flex-col items-center text-text bg-background gap-12 xl:gap-16 p-8 md:p-12 lg:p-24"
     >
       <motion.div
-        ref={ref}
-        animate={controls}
+        ref={headerRef}
+        animate={headerControls}
         initial="hidden"
         variants={fadeIn('up', 'spring', 0, 2)}
       >
@@ -61,23 +62,59 @@ const Portfolio = () => {
       <div className="flex flex-col gap-24">
         {/* Features section starts here */}
         <div className="flex flex-col items-center justify-center gap-24 w-full">
-          {portfolioItems.map((item, index) => (
-            <div key={index} className="flex flex-col lg:flex-row items-center justify-between w-full gap-4 lg:gap-16">
-              {index % 2 === 0 && (
-                <img className="gif w-full lg:w-2/5 hidden lg:block" src={item.imgSrc} alt={item.title} />
-              )}
-              <div className="flex flex-col gap-2 w-full lg:w-2/5">
-                <h2 className="text-accent text-xl sm:text-2xl md:text-3xl lg:text-4xl">{item.title}</h2>
-                <p className="text-white text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl">{item.description}</p>
-                <a href={item.link} className="flex items-center gap-1 text-accent text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl">
-                  {item.linkText} <EastIcon className="text-accent" />
-                </a>
-              </div>
-              {index % 2 !== 0 && (
-                <img className="gif w-full lg:w-2/5 hidden lg:block" src={item.imgSrc} alt={item.title} />
-              )}
-            </div>
-          ))}
+          {portfolioItems.map((item, index) => {
+            const controls = useAnimation();
+            const { ref, inView } = useInView({
+              threshold: 0.1,
+              triggerOnce: true,
+            });
+
+            useEffect(() => {
+              if (inView) {
+                controls.start('show');
+              }
+            }, [controls, inView]);
+
+            return (
+              <motion.div
+                key={index}
+                ref={ref}
+                animate={controls}
+                initial="hidden"
+                variants={fadeIn('up', 'spring', index * 0.2, 2)}
+                className="flex flex-col lg:flex-row items-center justify-between w-full gap-4 lg:gap-16"
+              >
+                {index % 2 === 0 && (
+                  <img
+                    className="gif w-full lg:w-2/5 hidden lg:block"
+                    src={item.imgSrc}
+                    alt={item.title}
+                  />
+                )}
+                <div className="flex flex-col gap-2 w-full lg:w-2/5">
+                  <h2 className="text-accent text-xl sm:text-2xl md:text-3xl lg:text-4xl">
+                    {item.title}
+                  </h2>
+                  <p className="text-white text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl">
+                    {item.description}
+                  </p>
+                  <a
+                    href={item.link}
+                    className="flex items-center gap-1 text-accent text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl"
+                  >
+                    {item.linkText} <EastIcon className="text-accent" />
+                  </a>
+                </div>
+                {index % 2 !== 0 && (
+                  <img
+                    className="gif w-full lg:w-2/5 hidden lg:block"
+                    src={item.imgSrc}
+                    alt={item.title}
+                  />
+                )}
+              </motion.div>
+            );
+          })}
         </div>
         {/* Features section ends here */}
       </div>
