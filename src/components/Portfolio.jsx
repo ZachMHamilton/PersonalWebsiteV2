@@ -1,14 +1,36 @@
 import EastIcon from '@mui/icons-material/East';
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+import { useEffect } from 'react';
+import { fadeIn } from '../utils/motion';
 
 const Portfolio = () => {
+  const controls = useAnimation();
+  const { ref, inView } = useInView({
+    threshold: 0.1,
+  });
+
+  useEffect(() => {
+    if (inView) {
+      controls.start('show');
+    }
+  }, [controls, inView]);
+
   return (
     <div
       id="portfolio"
       className="flex flex-col items-center text-text bg-background gap-12 xl:gap-16 p-8 md:p-12 lg:p-24"
     >
-      <div className="text-text text-3xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
-        Portfolio
-      </div>
+      <motion.div
+        ref={ref}
+        animate={controls}
+        initial="hidden"
+        variants={fadeIn('up', 'spring', 0, 2)}
+      >
+        <div className="text-text text-3xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
+          Portfolio
+        </div>
+      </motion.div>
       <div className="flex flex-col gap-24">
         {/* Features section starts here */}
         <div className="flex flex-col items-center justify-center gap-24 w-full">
