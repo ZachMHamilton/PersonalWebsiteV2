@@ -26,7 +26,7 @@ const Experience = () => {
         </div>
         {/* Experience section starts here */}
         <div className="flex flex-col items-center justify-center gap-24 w-full h-full">
-          <div className="flex flex-col lg:flex-row items-start justify-between w-full gap-4 lg:gap-16">
+          <div className="flex flex-col sm:flex-row items-start justify-between w-full gap-4 lg:gap-16">
             <div className="flex flex-col gap-8 w-full lg:w-2/5">
               {experienceData.map((experience, index) => (
                 <div
@@ -66,15 +66,7 @@ const Experience = () => {
                 </div>
               ))}
             </div>
-            <div className="flex flex-col justify-center items-center w-full lg:w-2/5 hidden lg:block">
-              <div>
-                <h2 className="text-accent text-xl sm:text-2xl md:text-3xl lg:text-4xl">
-                  {selectedExperience.title}
-                </h2>
-                <h3 className="text-white text-lg sm:text-xl md:text-2xl">
-                  {selectedExperience.company}
-                </h3>
-              </div>
+            <div className="flex flex-col justify-center items-center w-full lg:w-2/5 hidden sm:block">
               <ul className="text-white text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl list-disc pl-6 mt-4">
                 {selectedExperience.details.map((detail, index) => (
                   <li key={index}>{detail}</li>
