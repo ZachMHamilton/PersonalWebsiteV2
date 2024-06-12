@@ -23,20 +23,20 @@ const Contact = () => {
     >
       <div
         id="contact"
-        className="md:flex hidden items-start gap-48 2xl:gap-60 3xl:gap-64 4xl:gap-72 w-full h-full p-8 md:p-12 lg:p-24"
+        className="flex items-start gap-48 2xl:gap-60 3xl:gap-64 4xl:gap-72 w-full h-full p-8 md:p-12 lg:p-24"
       >
-        <div className="flex flex-col items-start w-2/5 gap-6">
-          <h1 className="text-white text-5xl lg:text-6xl">
+        <div className="flex flex-col items-center md:items-start w-full md:w-2/5 gap-6">
+          <h1 className="text-text text-3xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
             Let&apos;s work together!
           </h1>
-          <p className="flex items-center text-white mt-4">
+          <p className="flex items-center text-white text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl">
             <EmailIcon className="mr-2" />
             Email:&nbsp;
             <a href="mailto:zachmhamilton@outlook.com" className="text-accent">
               zachmhamilton@outlook.com
             </a>
           </p>
-          <p className="flex items-center text-white mt-2">
+          <p className="flex items-center text-white text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl">
             <LinkedInIcon className="mr-2" />
             Connect with me on&nbsp;
             <a
@@ -46,7 +46,7 @@ const Contact = () => {
               LinkedIn
             </a>
           </p>
-          <p className="flex items-center text-white mt-2">
+          <p className="flex items-center text-white text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl">
             <GitHubIcon className="mr-2" />
             Follow my work on&nbsp;
             <a href="https://github.com/ZachMHamilton" className="text-accent">
@@ -54,7 +54,7 @@ const Contact = () => {
             </a>
           </p>
         </div>
-        <div className="flex flex-col items-center w-2/5 gap-6">
+        <div className="hidden md:flex flex-col items-center w-2/5 gap-6">
           <div className="text-white">{message}</div>
           <form
             className="flex flex-col gap-1 items-start justify-cente mx-auto w-4/5"
