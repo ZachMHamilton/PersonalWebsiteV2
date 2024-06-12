@@ -19,7 +19,7 @@ const experienceData = [
     ],
   },
   {
-    title: 'Co-Creator & Software Engineer',
+    title: 'Co-Creator',
     company: 'Lambda Peeler (Open Source)',
     period: "July '23 - Jan. '24",
     details: [
