@@ -2,7 +2,7 @@ import { Link as ScrollLink } from 'react-scroll';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 
-const Nav = ({ current, setCurrent }) => {
+const Nav = ({ current }) => {
   return (
     <nav
       id="nav"
@@ -21,7 +21,6 @@ const Nav = ({ current, setCurrent }) => {
                   ? 'text-accent'
                   : 'text-text hover:text-accent'
               }`}
-              onClick={() => setCurrent('home')}
             >
               Home
             </ScrollLink>
@@ -35,7 +34,6 @@ const Nav = ({ current, setCurrent }) => {
                   ? 'text-accent'
                   : 'text-text hover:text-accent'
               }`}
-              onClick={() => setCurrent('experience')}
             >
               Experience
             </ScrollLink>
@@ -49,7 +47,6 @@ const Nav = ({ current, setCurrent }) => {
                   ? 'text-accent'
                   : 'text-text hover:text-accent'
               }`}
-              onClick={() => setCurrent('portfolio')}
             >
               Portfolio
             </ScrollLink>
@@ -63,7 +60,6 @@ const Nav = ({ current, setCurrent }) => {
                   ? 'text-accent'
                   : 'text-text hover:text-accent'
               }`}
-              onClick={() => setCurrent('contact')}
             >
               Contact
             </ScrollLink>

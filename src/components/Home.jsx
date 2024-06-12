@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { fadeIn } from '../utils/motion';
 import { useFadeInOnInView } from '../utils/useFadeInOnView';
 
-const Home = ({ setCurrent }) => {
+const Home = () => {
   const { ref, controls } = useFadeInOnInView(0.1);
   return (
     <motion.div
@@ -27,7 +27,6 @@ const Home = ({ setCurrent }) => {
               smooth={true}
               duration={500}
               className="bg-primary hover:bg-accent text-white py-2 px-4 rounded cursor-pointer"
-              onClick={() => setCurrent('experience')}
             >
               Check Out My Work
             </ScrollLink>
@@ -36,7 +35,6 @@ const Home = ({ setCurrent }) => {
               smooth={true}
               duration={500}
               className="bg-primary hidden md:block hover:bg-accent text-white py-2 px-4 rounded cursor-pointer"
-              onClick={() => setCurrent('contact')}
             >
               Get in Touch
             </ScrollLink>

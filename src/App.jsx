@@ -31,9 +31,9 @@ function App() {
 
   return (
     <div className="flex flex-col gap-2">
-      <Nav current={current} setCurrent={setCurrent} />
+      <Nav current={current} />
       <section ref={homeRef}>
-        <Home setCurrent={setCurrent} />
+        <Home />
       </section>
       <section ref={experienceRef}>
         <Experience />
