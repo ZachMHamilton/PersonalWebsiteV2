@@ -24,25 +24,6 @@ const Experience = () => {
         <div className="text-text text-3xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
           Experience
         </div>
-        <div className="flex flex-col items-start justify-start gap-12 hidden xtra:block w-full">
-          <div className="flex items-end">
-            <span className="text-accent text-lg sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">
-              Languages&nbsp;
-            </span>
-            <p className="text-white text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl">
-              &nbsp; JavaScript | TypeScript | Java | SQL
-            </p>
-          </div>
-          <div className="flex items-end">
-            <span className="text-accent text-lg sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">
-              Technologies&nbsp;
-            </span>
-            <p className="text-white text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl">
-              &nbsp; React | Node | Express | AWS SDK | PostgreSQL | MongoDB |
-              Redux | Git | Jest | HTML | CSS | JWT | Heroku
-            </p>
-          </div>
-        </div>
         {/* Experience section starts here */}
         <div className="flex flex-col items-center justify-center gap-24 w-full h-full">
           <div className="flex flex-col lg:flex-row items-start justify-between w-full gap-4 lg:gap-16">
