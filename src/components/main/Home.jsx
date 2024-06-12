@@ -1,7 +1,7 @@
 import { Link as ScrollLink } from 'react-scroll';
 import { motion } from 'framer-motion';
-import { fadeIn } from '../utils/motion';
-import { useFadeInOnInView } from '../utils/useFadeInOnView';
+import { fadeIn } from '../../utils/motion';
+import { useFadeInOnInView } from '../../utils/useFadeInOnView';
 
 const Home = () => {
   const { ref, controls } = useFadeInOnInView(0.1);

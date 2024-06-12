@@ -1,7 +1,7 @@
 import EastIcon from '@mui/icons-material/East';
 import { motion } from 'framer-motion';
-import { fadeIn } from '../utils/motion';
-import { useFadeInOnInView } from '../utils/useFadeInOnView';
+import { fadeIn } from '../../utils/motion';
+import { useFadeInOnInView } from '../../utils/useFadeInOnView';
 
 const PortfolioItem = ({ item, isImageLeft }) => {
   const { ref, controls } = useFadeInOnInView(0.1);

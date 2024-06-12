@@ -3,8 +3,8 @@ import EmailIcon from '@mui/icons-material/Email';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { motion } from 'framer-motion';
-import { fadeIn } from '../utils/motion';
-import { useFadeInOnInView } from '../utils/useFadeInOnView';
+import { fadeIn } from '../../utils/motion';
+import { useFadeInOnInView } from '../../utils/useFadeInOnView';
 
 const Contact = () => {
   const { ref, controls } = useFadeInOnInView(0.1);

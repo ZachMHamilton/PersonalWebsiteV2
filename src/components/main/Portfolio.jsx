@@ -1,8 +1,8 @@
 import { motion } from 'framer-motion';
-import { fadeIn } from '../utils/motion';
-import { useFadeInOnInView } from '../utils/useFadeInOnView';
-import portfolioData from '../data/portfolioData';
-import PortfolioItem from './PortfolioItem';
+import { fadeIn } from '../../utils/motion';
+import { useFadeInOnInView } from '../../utils/useFadeInOnView';
+import portfolioData from '../../data/portfolioData';
+import PortfolioItem from '../sub/PortfolioItem';
 
 const Portfolio = () => {
   const { ref: headerRef, controls: headerControls } = useFadeInOnInView(0.1);

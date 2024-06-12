@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import experienceData from '../data/experienceData';
+import experienceData from '../../data/experienceData';
 import { motion } from 'framer-motion';
-import { fadeIn } from '../utils/motion';
-import { useFadeInOnInView } from '../utils/useFadeInOnView';
+import { fadeIn } from '../../utils/motion';
+import { useFadeInOnInView } from '../../utils/useFadeInOnView';
 
 const Experience = () => {
   const { ref: headerRef, controls: headerControls } = useFadeInOnInView(0.1);

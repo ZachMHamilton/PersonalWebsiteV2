@@ -1,4 +1,4 @@
-import { Home, Experience, Portfolio, Contact, Nav } from './components';
+import { Home, Experience, Portfolio, Contact, Nav } from './components/';
 import Particles from 'react-tsparticles';
 import { loadSlim } from 'tsparticles-slim';
 import { useCallback, useState, useEffect } from 'react';
