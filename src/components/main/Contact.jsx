@@ -23,7 +23,7 @@ const Contact = () => {
     >
       <div
         id="contact"
-        className="md:flex hidden items-start gap-48 w-full h-full p-8 md:p-12 lg:p-24"
+        className="md:flex hidden items-start gap-48 2xl:gap-60 3xl:gap-64 4xl:gap-72 w-full h-full p-8 md:p-12 lg:p-24"
       >
         <div className="flex flex-col items-start w-2/5 gap-6">
           <h1 className="text-white text-5xl lg:text-6xl">
