@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import Image from 'next/image';
 
 const SkillItem = ({ src, width, height, index }) => {
   const { ref, inView } = useInView({
@@ -22,7 +21,7 @@ const SkillItem = ({ src, width, height, index }) => {
       custom={index}
       transition={{ delay: index * animationDelay }}
     >
-      <Image src={src} width={width} height={height} alt="skill image" />
+      <img src={src} width={width} height={height} alt="skill image" />
     </motion.div>
   );
 };

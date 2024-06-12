@@ -1,4 +1,11 @@
-import { Home, Experience, Portfolio, Contact, Nav } from './components/';
+import {
+  Home,
+  Experience,
+  Portfolio,
+  Contact,
+  Nav,
+  Skills,
+} from './components/';
 import Particles from 'react-tsparticles';
 import { loadSlim } from 'tsparticles-slim';
 import { useCallback, useState, useEffect } from 'react';
@@ -34,6 +41,9 @@ function App() {
       <Nav current={current} />
       <section ref={homeRef}>
         <Home />
+      </section>
+      <section>
+        <Skills />
       </section>
       <section ref={experienceRef}>
         <Experience />
