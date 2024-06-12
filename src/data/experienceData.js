@@ -5,7 +5,7 @@ const experienceData = [
     period: "July '24 - Present",
     details: [
       'The Ohio Department of Taxation of Taxation maintains an integrated Tax Administration System known as STARs',
-      "Integrate with the STARS Development, Support, Infrastructure, and Production System teams in order to meet the agency's needs to support the business community directly and taxpayers indirectly.",
+      "Integrated with the STARS Development, Support, Infrastructure, and Production System teams in order to meet the agency's needs to support the business community directly and taxpayers indirectly",
     ],
   },
   {
