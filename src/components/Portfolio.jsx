@@ -10,7 +10,7 @@ const Portfolio = () => {
   return (
     <div
       id="portfolio"
-      className="flex flex-col items-center text-text bg-background gap-12 xl:gap-16 p-8 md:p-12 lg:p-24"
+      className="flex flex-col h-full items-center text-text gap-12 xl:gap-16 p-8 md:p-12 lg:p-24"
     >
       <motion.div
         ref={headerRef}
@@ -22,7 +22,7 @@ const Portfolio = () => {
           Portfolio
         </div>
       </motion.div>
-      <div className="flex flex-col gap-24">
+      <div className="flex flex-col gap-24 z-15">
         <div className="flex flex-col items-center justify-center gap-24 w-full">
           {portfolioData.map((item, index) => (
             <PortfolioItem

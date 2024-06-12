@@ -3,5 +3,24 @@
 @tailwind utilities;
 
 * {
-  background-color: #010204;
+}
+
+#tsparticles {
+  z-index: -1;
+}
+
+#experience {
+  z-index: 15;
+}
+
+#portfolio {
+  z-index: 15;
+}
+
+#contact {
+  z-index: 15;
+}
+
+#nav {
+  z-index: 20;
 }

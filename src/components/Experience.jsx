@@ -19,7 +19,7 @@ const Experience = () => {
     >
       <div
         id="experience"
-        className="flex flex-col items-center gap-8 xtra:gap-16 p-8 md:p-12 lg:p-24"
+        className="flex flex-col h-full items-center gap-8 xtra:gap-16 p-8 md:p-12 lg:p-24"
       >
         <div className="text-text text-3xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
           Experience
@@ -57,7 +57,7 @@ const Experience = () => {
                     className={`text-lg sm:text-xl md:text-2xl ${
                       selectedExperience === experience
                         ? 'text-accent'
-                        : 'text-gray-700'
+                        : 'text-gray-500'
                     }`}
                   >
                     {experience.title}
@@ -67,7 +67,7 @@ const Experience = () => {
                       className={`text-sm sm:text-base md:text-lg ${
                         selectedExperience === experience
                           ? 'text-white'
-                          : 'text-gray-700'
+                          : 'text-gray-500'
                       }`}
                     >
                       {experience.company}
@@ -76,7 +76,7 @@ const Experience = () => {
                       className={`text-sm hidden sm:block sm:text-base md:text-lg ${
                         selectedExperience === experience
                           ? 'text-white'
-                          : 'text-gray-700'
+                          : 'text-gray-500'
                       }`}
                     >
                       {experience.period}

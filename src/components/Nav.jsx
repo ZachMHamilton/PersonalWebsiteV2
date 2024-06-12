@@ -1,13 +1,13 @@
-import { useState } from 'react';
 import { Link as ScrollLink } from 'react-scroll';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 
-const Nav = () => {
-  const [current, setCurrent] = useState('home');
-
+const Nav = ({ current, setCurrent }) => {
   return (
-    <nav className="fixed top-0 w-full bg-transparent z-10">
+    <nav
+      id="nav"
+      className="fixed top-0 w-full bg-gradient-to-b from-background z-10"
+    >
       <div className="w-full px-8 md:px-12 lg:px-24">
         <div className="flex justify-between h-16">
           <div className="hidden md:flex gap-8">
