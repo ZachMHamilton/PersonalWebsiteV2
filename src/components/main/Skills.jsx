@@ -5,10 +5,10 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="flex flex-col items-center justify-center gap-3 h-full relative overflow-hidden py-20"
+      className="flex flex-col items-center justify-center gap-3 h-full mx-auto md:w-2/3 relative overflow-hidden py-20"
       style={{ transform: 'scale(0.9)' }}
     >
-      <div className="flex flex-wrap justify-center mt-4 gap-10">
+      <div className="flex flex-wrap justify-center mt-4 gap-16">
         {skills.map((image, index) => (
           <SkillItem
             key={index}
