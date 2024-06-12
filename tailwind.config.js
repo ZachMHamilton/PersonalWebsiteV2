@@ -20,6 +20,9 @@ export default {
           DEFAULT: '#010204',
         },
       },
+      fontFamily: {
+        poppins: ['Poppins', 'sans-serif'],
+      },
     },
     screens: {
       sm: '640px',
