@@ -35,29 +35,29 @@ const Experience = () => {
                   onClick={() => setSelectedExperience(experience)}
                 >
                   <h3
-                    className={`text-lg sm:text-xl md:text-2xl text-accent sm:${
+                    className={`text-lg sm:text-xl md:text-2xl text-accent ${
                       selectedExperience === experience
-                        ? 'text-accent'
-                        : 'text-gray-500'
+                        ? 'sm:text-accent'
+                        : 'sm:text-gray-500'
                     }`}
                   >
                     {experience.title}
                   </h3>
                   <div>
                     <p
-                      className={`text-sm sm:text-base md:text-lg text-white sm:${
+                      className={`text-sm sm:text-base md:text-lg text-white ${
                         selectedExperience === experience
-                          ? 'text-white'
-                          : 'text-gray-500'
+                          ? 'sm:text-white'
+                          : 'sm:text-gray-500'
                       }`}
                     >
                       {experience.company}
                     </p>
                     <p
-                      className={`text-sm sm:text-base md:text-lg text-white sm:${
+                      className={`text-sm sm:text-base md:text-lg text-white ${
                         selectedExperience === experience
-                          ? 'text-white'
-                          : 'text-gray-500'
+                          ? 'sm:text-white'
+                          : 'sm:text-gray-500'
                       }`}
                     >
                       {experience.period}
