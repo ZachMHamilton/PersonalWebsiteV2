@@ -1,4 +1,4 @@
-export const Skill_data = [
+export const skills = [
   {
     skill_name: "Html 5",
     Image: "/html.png",
