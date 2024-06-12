@@ -11,7 +11,7 @@ const SkillItem = ({ src, width, height, index }) => {
     visible: { opacity: 1 },
   };
 
-  const animationDelay = 0.3;
+  const animationDelay = 0.1;
   return (
     <motion.div
       ref={ref}
