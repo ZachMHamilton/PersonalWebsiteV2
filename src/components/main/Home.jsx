@@ -3,23 +3,9 @@ import { motion } from 'framer-motion';
 import { fadeIn } from '../../utils/motion';
 import { useFadeInOnInView } from '../../utils/useFadeInOnView';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import { useEffect, useState } from 'react';
 
 const Home = ({ current }) => {
   const { ref, controls } = useFadeInOnInView(0.1);
-  // const [show, setShow] = useState(true);
-
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     setShow(false);
-  //   };
-
-  //   window.addEventListener('scroll', handleScroll);
-
-  //   return () => {
-  //     window.removeEventListener('scroll', handleScroll);
-  //   };
-  // }, []);
 
   return (
     <motion.div
@@ -58,7 +44,7 @@ const Home = ({ current }) => {
         </div>
         <div
           className={`absolute bottom-2 flex flex-col items-center ${
-            current == 'home' ? '' : 'fade-out'
+            current == 'home' ? 'fade-in' : 'fade-out'
           }`}
         >
           <p>Scroll</p>
