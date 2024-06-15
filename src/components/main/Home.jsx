@@ -5,21 +5,21 @@ import { useFadeInOnInView } from '../../utils/useFadeInOnView';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { useEffect, useState } from 'react';
 
-const Home = () => {
+const Home = ({ current }) => {
   const { ref, controls } = useFadeInOnInView(0.1);
-  const [show, setShow] = useState(true);
+  // const [show, setShow] = useState(true);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setShow(false);
-    };
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     setShow(false);
+  //   };
 
-    window.addEventListener('scroll', handleScroll);
+  //   window.addEventListener('scroll', handleScroll);
 
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener('scroll', handleScroll);
+  //   };
+  // }, []);
 
   return (
     <motion.div
@@ -58,7 +58,7 @@ const Home = () => {
         </div>
         <div
           className={`absolute bottom-2 flex flex-col items-center ${
-            show ? '' : 'fade-out'
+            current == 'home' ? '' : 'fade-out'
           }`}
         >
           <p>Scroll</p>

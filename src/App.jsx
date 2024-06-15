@@ -17,7 +17,8 @@ function App() {
     await loadSlim(engine);
   }, []);
 
-  const [homeRef, homeInView] = useInView({ threshold: 0.5 });
+  const [homeRef, homeInView] = useInView({ threshold: 1 });
+  const [skillsRef, skillsInView] = useInView({ threshold: 0 });
   const [experienceRef, experienceInView] = useInView({ threshold: 0.5 });
   const [portfolioRef, portfolioInView] = useInView({ threshold: 0.5 });
   const [contactRef, contactInView] = useInView({ threshold: 0.5 });
@@ -25,14 +26,24 @@ function App() {
   useEffect(() => {
     if (homeInView) {
       setCurrent('home');
+    } else if (skillsInView) {
+      console.log('skillsInView');
+      setCurrent('skills');
     } else if (experienceInView) {
+      console.log('experienceInView');
       setCurrent('experience');
     } else if (portfolioInView) {
       setCurrent('portfolio');
     } else if (contactInView) {
       setCurrent('contact');
     }
-  }, [homeInView, experienceInView, portfolioInView, contactInView]);
+  }, [
+    homeInView,
+    experienceInView,
+    portfolioInView,
+    contactInView,
+    skillsInView,
+  ]);
 
   const particlesLoaded = useCallback(async () => {}, []);
 
@@ -42,7 +53,7 @@ function App() {
       <section ref={homeRef}>
         <Home current={current} />
       </section>
-      <section>
+      <section ref={skillsRef}>
         <Skills />
       </section>
       <section ref={experienceRef}>
