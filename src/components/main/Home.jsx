@@ -56,12 +56,14 @@ const Home = () => {
             </ScrollLink>
           </div>
         </div>
-        {show && (
-          <div className="absolute bottom-2 flex flex-col items-center">
-            <p>Scroll</p>
-            <ExpandMoreIcon color="white" fontSize="large" />
-          </div>
-        )}
+        <div
+          className={`absolute bottom-2 flex flex-col items-center ${
+            show ? '' : 'fade-out'
+          }`}
+        >
+          <p>Scroll</p>
+          <ExpandMoreIcon color="white" fontSize="large" />
+        </div>
       </div>
     </motion.div>
   );
