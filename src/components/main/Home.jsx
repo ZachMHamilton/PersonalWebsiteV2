@@ -2,6 +2,7 @@ import { Link as ScrollLink } from 'react-scroll';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../../utils/motion';
 import { useFadeInOnInView } from '../../utils/useFadeInOnView';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 const Home = () => {
   const { ref, controls } = useFadeInOnInView(0.1);
@@ -39,6 +40,10 @@ const Home = () => {
               Get in Touch
             </ScrollLink>
           </div>
+        </div>
+        <div className="absolute bottom-2 flex flex-col items-center">
+          <p>Scroll</p>
+          <ExpandMoreIcon color="white" fontSize="large" />
         </div>
       </div>
     </motion.div>

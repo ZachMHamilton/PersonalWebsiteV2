@@ -40,7 +40,7 @@ function App() {
     <div className="flex flex-col gap-2">
       <Nav current={current} />
       <section ref={homeRef}>
-        <Home />
+        <Home current={current} />
       </section>
       <section>
         <Skills />
