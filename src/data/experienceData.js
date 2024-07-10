@@ -5,7 +5,7 @@ const experienceData = [
     period: "July '24 - Present",
     details: [
       'The Ohio Department of Taxation of Taxation maintains an integrated Tax Administration System known as STARs',
-      "Integrated with the STARS Development, Support, Infrastructure, and Production System teams in order to meet the agency's needs to support the business community directly and taxpayers indirectly",
+      "Integrating with the STARS Development, Support, Infrastructure, and Production System teams in order to meet the agency's needs to support the business community directly and taxpayers indirectly",
     ],
   },
   {
@@ -13,9 +13,9 @@ const experienceData = [
     company: 'Linkt',
     period: "Jan. '24 - June '24",
     details: [
-      'Led the overhaul of one of Linkt’s clients’ legacy codebase into a modern Next.js application, enhancing scalability and performance',
-      'Identified and eliminated redundant code segments, optimizing application performance and enhancing user experience',
-      'Implemented extensive test suites using Jest for unit, integration, and end-to-end testing, achieving 90% code coverage',
+      'Piloted the overhaul of a legacy codebase into a modern Next.js application, enhancing scalability and performance with technologies such as React and Tailwind',
+      'Identified and eliminated redundant code segments, enhancing application modularity and optimizing developer experience',
+      'Implemented extensive test suites using Jest for unit and integration testing, achieving 90% code coverage project-wide',
     ],
   },
   {
