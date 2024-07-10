@@ -13,7 +13,7 @@ const experienceData = [
     company: 'Linkt',
     period: "Jan. '24 - June '24",
     details: [
-      'Piloted the overhaul of a legacy codebase into a modern Next.js application, enhancing scalability and performance with technologies such as React and Tailwind',
+      'Piloted the overhaul of a legacy codebase into a modern Next.js application, enhancing scalability and performance with technologies',
       'Identified and eliminated redundant code segments, enhancing application modularity and optimizing developer experience',
       'Implemented extensive test suites using Jest for unit and integration testing, achieving 90% code coverage project-wide',
     ],
