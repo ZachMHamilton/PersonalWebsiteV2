@@ -1,4 +1,4 @@
-import EastIcon from '@mui/icons-material/East';
+import GitHubIcon from '@mui/icons-material/GitHub';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../../utils/motion';
 import { useFadeInOnInView } from '../../utils/useFadeInOnView';
@@ -32,9 +32,10 @@ const PortfolioItem = ({ item, isImageLeft }) => {
         </p>
         <a
           href={item.link}
-          className="flex items-center gap-1 text-accent text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl"
+          target="_blank"
+          className="flex items-center gap-1 text-accent text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl hover:text-accent-800"
         >
-          {item.linkText} <EastIcon className="text-accent" />
+          <GitHubIcon /> {item.linkText}
         </a>
       </div>
     </motion.div>

@@ -19,7 +19,7 @@ const Portfolio = () => {
         variants={fadeIn('up', 'spring', 0, 2)}
       >
         <div className="text-text text-3xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
-          Portfolio
+          Open Source Projects
         </div>
       </motion.div>
       <div className="flex flex-col gap-24 z-15">

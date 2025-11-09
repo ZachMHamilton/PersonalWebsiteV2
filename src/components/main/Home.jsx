@@ -28,7 +28,7 @@ const Home = ({ current }) => {
               to="experience"
               smooth={true}
               duration={500}
-              className="bg-primary hover:bg-accent text-white py-2 px-4 rounded cursor-pointer"
+              className="bg-primary hover:bg-accent text-white py-2 px-4 rounded cursor-pointer hover:bg-accent-800"
             >
               Check Out My Work
             </ScrollLink>
@@ -36,7 +36,7 @@ const Home = ({ current }) => {
               to="contact"
               smooth={true}
               duration={500}
-              className="bg-primary hidden md:block hover:bg-accent text-white py-2 px-4 rounded cursor-pointer"
+              className="bg-primary hidden md:block hover:bg-accent text-white py-2 px-4 rounded cursor-pointer hover:bg-accent-800"
             >
               Get in Touch
             </ScrollLink>

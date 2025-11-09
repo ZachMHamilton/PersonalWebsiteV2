@@ -12,6 +12,7 @@ export default {
         },
         accent: {
           DEFAULT: '#006400',
+          800: '#003500ff',
         },
         text: {
           DEFAULT: '#f7fafd',

@@ -68,11 +68,14 @@ const Nav = ({ current }) => {
             <div className="hidden md:block text-xl font-bold text-accent">
               Zach Hamilton
             </div>
-            <a href="https://www.linkedin.com/in/zach-m-hamilton/">
-              <LinkedInIcon className="text-white" />
+            <a
+              href="https://www.linkedin.com/in/zach-m-hamilton/"
+              target="_blank"
+            >
+              <LinkedInIcon className="text-white hover:text-accent" />
             </a>
-            <a href="https://github.com/ZachMHamilton">
-              <GitHubIcon className="text-white" />
+            <a href="https://github.com/ZachMHamilton" target="_blank">
+              <GitHubIcon className="text-white hover:text-accent" />
             </a>
           </div>
         </div>

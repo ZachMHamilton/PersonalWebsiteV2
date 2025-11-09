@@ -1,3 +1,4 @@
+import LaunchIcon from '@mui/icons-material/Launch';
 import { useState } from 'react';
 import experienceData from '../../data/experienceData';
 import { motion } from 'framer-motion';
@@ -71,6 +72,16 @@ const Experience = () => {
                 {selectedExperience.details.map((detail, index) => (
                   <li key={index}>{detail}</li>
                 ))}
+                {selectedExperience.link ? (
+                  <a
+                    className="list-none text-accent pt-4 flex items-center hover:text-accent-800"
+                    target="_blank"
+                    href={selectedExperience.link.url}
+                  >
+                    <LaunchIcon className="mr-1" />
+                    {selectedExperience.link.text}
+                  </a>
+                ) : null}
               </ul>
             </div>
           </div>

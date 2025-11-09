@@ -127,7 +127,7 @@ function App() {
               value: 60,
             },
             opacity: {
-              value: 0.5,
+              value: 0.25,
             },
             shape: {
               type: 'circle',
