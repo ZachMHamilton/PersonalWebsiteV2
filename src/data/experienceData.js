@@ -37,10 +37,6 @@ const experienceData = [
       'Identified and eliminated redundant code segments, enhancing application modularity and optimizing developer experience',
       'Implemented extensive test suites using Jest for unit and integration testing, achieving 90% code coverage project-wide',
     ],
-    link: {
-      url: 'https://www.linkt.ai/',
-      text: 'Linkt',
-    },
   },
   // {
   //   title: 'Co-Creator',

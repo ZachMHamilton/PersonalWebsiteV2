@@ -64,6 +64,16 @@ const Experience = () => {
                       {experience.period}
                     </p>
                   </div>
+                  {experience.link ? (
+                    <a
+                      className="text-accent text-base pt-4 flex items-center hover:text-accent-800 sm:hidden"
+                      target="_blank"
+                      href={experience.link.url}
+                    >
+                      <LaunchIcon className="mr-1" />
+                      {experience.link.text}
+                    </a>
+                  ) : null}
                 </div>
               ))}
             </div>
